@@ -1,5 +1,27 @@
 {
+  "name": "postma_restfull_booker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tst:cli": "newman run ./booker_postman_collection.json -e ./env_postman_booker.json",
+    "tst:r_html": "npx newman run ./booker_postman_collection.json -e ./env_postman_booker.json -r htmlextra",
+    "tst:r_json": "newman run ./booker_postman_collection.json -e ./env_postman_booker.json -r json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomyP/Restfull-booker-API-bs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomyP/Restfull-booker-API-bs/issues"
+  },
+  "homepage": "https://github.com/ThomyP/Restfull-booker-API-bs#readme",
   "dependencies": {
     "newman-reporter-html": "^1.0.5"
-  }
+  },
+  "devDependencies": {}
 }
